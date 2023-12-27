@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <header>
+       <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a> 
+    </header>
+    <div>
+        <div class="img">
+        <img src="about.jpg" alt="">
+      </div>
+      <div class="para">
+        <h1>ABDUL SAHITH</h1>
+        <P>I'm sahith ,Fullstack developer from tirunelveli 
+         and <br> I done many project with both frontend and backend
+        </P>
+      </div>
+    </div>
+    <div class="icon">
+        <a href="#"><span></span><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/8056712504" target="_blank"><span></span><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><span></span><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><span></span><i class="fa-brands fa-instagram"></i></a>
+     </div>
+</body>
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    body{
+        background-color:#081b29;
+        width:100%;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    img{
+         width:350px;
+         height:350px;
+         border-radius: 30%;
+         opacity: 2;
+         animation: left 3s alternate linear infinite;
+         margin-left: 10px;
+    }
+    @keyframes left{
+        0%{  
+            
+            
+            transform: translateY(-15px);
+            opacity: .5;
+        }
+        100%{
+            
+            transform: translateY(0);
+            opacity:1;
+        }
+    }    
+    div{
+        width:70%;
+        height:400px;
+        background:transparent;
+        border-radius: 60px;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         animation: right 2s ease forwards;
+
+    }
+    @keyframes right {
+        0%{ 
+            
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    h1{
+        color:white;
+        font-size: 2rem;
+        margin-left: 50px;
+        animation: right 3s ease forwards;
+
+    }
+    p{
+        font-size: 1rem;
+        color: white;
+        animation: right 4s ease forwards;
+    }
+    .icon{
+        width: 400px;
+        height:60px;
+        background:transparent;
+        margin-left: 150px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        animation: left 4s ease forwards;
+    }
+    .icon a{
+        background:transparent;
+        border:2px solid #00abf0;
+        color:white;
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 20px;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        animation: right 4s ease forwards;
+    }
+    .icon span{
+        background-color: #00abf0;
+        position: absolute;
+       
+       width: 0;
+       height:100%;
+       left:0;
+       bottom: 0;
+       z-index: -1;
+       transition: 0.5s;
+    }
+    .icon a:hover span{
+        width:100%;
+
+    }
+    .para{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width:100%;
+        height: 40px;
+        background:transparent;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+    header a{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        font-size: 1.7rem;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-decoration: none;
+        margin-left: 20px;
+        animation: right 4s ease forwards;
+    }
+ </style>
+</html>
